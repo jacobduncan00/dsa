@@ -65,6 +65,8 @@ class LinkedList {
         if (count == ind) {
           prev -> next = curr -> next;
           delete(curr);
+          // No need to keep going as we have already got our index
+          return;
         }
         prev = curr;
         curr = curr -> next;
