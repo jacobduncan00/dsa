@@ -8,6 +8,7 @@ class LinkedList {
       Node* next;
     };
 
+
     void add(int val) {
       Node* newNode = new Node();
       newNode -> val = val;
